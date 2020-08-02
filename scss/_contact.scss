@@ -6,7 +6,7 @@
     flex-direction: column;
     align-items: center;
     background:
-        linear-gradient(to right, rgba($primary-color, 0.9), rgba($primary-color, 0.3)), url(../img/model-1.jpg) center top;
+        linear-gradient(to right, rgba($primary-color, 0.5), rgba($primary-color, 0.15)), url(../img/background.png) center top;
     background-size: cover;
 
     h2 {
@@ -16,8 +16,9 @@
 
     &__list {
         display: grid;
-        grid-template-columns: 2fr;
-        gap: 2rem;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        gap: 1.5rem;
         font-size: 1.5rem;
     }
 
