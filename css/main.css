@@ -143,8 +143,8 @@
 }
 
 .nav .menu-nav__item.open {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  -webkit-transform: translateX(-35vw);
+          transform: translateX(-35vw);
 }
 
 .nav .menu-nav__item.active > a {
