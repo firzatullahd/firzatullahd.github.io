@@ -1,5 +1,7 @@
 $primary-color: #272727;
-$secondary-color:#ff652f;
+$secondary-color:rgb(99, 205, 243);
+// $secondary-color:#ff652f;
+
 
 * {
     box-sizing: border-box;
@@ -37,4 +39,26 @@ $secondary-color:#ff652f;
     @media screen and (min-width:1600px) {
         @content;
     }
+}
+
+
+@keyframes bubble {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+
 }

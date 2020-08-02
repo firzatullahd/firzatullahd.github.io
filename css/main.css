@@ -5,6 +5,44 @@
   margin: 0;
 }
 
+@-webkit-keyframes bubble {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-80vh);
+            transform: translateY(-80vh);
+    opacity: 0;
+  }
+}
+
+@keyframes bubble {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-80vh);
+            transform: translateY(-80vh);
+    opacity: 0;
+  }
+}
+
 .home {
   height: 100%;
   padding-top: 40vh;
@@ -13,8 +51,8 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url(../img/model-1.jpg) center top;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url(../img/model-1.jpg) center top;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.5)), to(rgba(39, 39, 39, 0.15))), url(../img/background.png) center top;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.5), rgba(39, 39, 39, 0.15)), url(../img/background.png) center top;
   background-size: cover;
 }
 
@@ -26,7 +64,7 @@
 }
 
 .home__name--last {
-  color: #ff652f;
+  color: #63cdf3;
   font-weight: 700;
 }
 
@@ -148,7 +186,7 @@
 }
 
 .nav .menu-nav__item.active > a {
-  color: #ff652f;
+  color: #63cdf3;
 }
 
 .nav .menu-nav__link {
@@ -162,7 +200,7 @@
 }
 
 .nav .menu-nav__link:hover {
-  color: #ff652f;
+  color: #63cdf3;
 }
 
 .menu-nav__item:nth-child(1) {
@@ -236,7 +274,7 @@
 .about .jobs__job {
   background: #414141;
   padding: 0.5rem;
-  border-bottom: 5px solid #ff652f;
+  border-bottom: 5px solid #63cdf3;
 }
 
 .about .jobs__job h2,
@@ -305,7 +343,7 @@
 
 .projects__item {
   position: relative;
-  border-bottom: 5px solid #ff652f;
+  border-bottom: 5px solid #63cdf3;
   overflow: hidden;
   cursor: pointer;
 }
@@ -321,7 +359,7 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background: #ff652f;
+  background: #63cdf3;
   opacity: 0;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -491,7 +529,7 @@ a {
 }
 
 .text-secondary {
-  color: #ff652f;
+  color: #63cdf3;
 }
 
 header {
@@ -519,7 +557,7 @@ main .social-icons a {
 }
 
 main .social-icons a:hover {
-  color: #ff652f;
+  color: #63cdf3;
 }
 
 footer {
@@ -530,5 +568,60 @@ footer {
   text-align: right;
   padding: 1rem;
   color: #fff;
+}
+
+.bubbles {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: absolute;
+  bottom: 0;
+}
+
+.bubbles img {
+  width: 50px;
+  -webkit-animation: bubble 7s linear infinite;
+          animation: bubble 7s linear infinite;
+}
+
+.bubbles img:nth-child(1) {
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+}
+
+.bubbles img:nth-child(2) {
+  -webkit-animation-delay: -7s;
+          animation-delay: -7s;
+}
+
+.bubbles img:nth-child(3) {
+  -webkit-animation-delay: -3.5s;
+          animation-delay: -3.5s;
+}
+
+.bubbles img:nth-child(4) {
+  -webkit-animation-delay: -4.5s;
+          animation-delay: -4.5s;
+}
+
+.bubbles img:nth-child(5) {
+  -webkit-animation-delay: -6.5s;
+          animation-delay: -6.5s;
+}
+
+.bubbles img:nth-child(6) {
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
+}
+
+.bubbles img:nth-child(7) {
+  -webkit-animation-delay: -0.5s;
+          animation-delay: -0.5s;
 }
 /*# sourceMappingURL=main.css.map */
