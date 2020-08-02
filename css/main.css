@@ -1,14 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;500&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
 @-webkit-keyframes bubble {
   0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: translateY(-20vh);
+            transform: translateY(-20vh);
     opacity: 0;
   }
   50% {
@@ -26,8 +28,8 @@
 
 @keyframes bubble {
   0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: translateY(-20vh);
+            transform: translateY(-20vh);
     opacity: 0;
   }
   50% {
@@ -187,6 +189,7 @@
 
 .nav .menu-nav__item.active > a {
   color: #63cdf3;
+  font-weight: 600;
 }
 
 .nav .menu-nav__link {
@@ -201,6 +204,7 @@
 
 .nav .menu-nav__link:hover {
   color: #63cdf3;
+  font-weight: 500;
 }
 
 .menu-nav__item:nth-child(1) {
@@ -521,6 +525,7 @@ h1,
 h2,
 h3 {
   font-weight: 400;
+  font-family: 'Merriweather', serif;
 }
 
 a {
@@ -581,7 +586,8 @@ footer {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   position: absolute;
-  bottom: 0;
+  bottom: 2.2rem;
+  z-index: 1;
 }
 
 .bubbles img {
