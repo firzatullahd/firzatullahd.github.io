@@ -1,4 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;500&display=swap');
+@font-face {
+    font-family: Merriweather;
+    src: url(../font/Merriweather-Regular.ttf);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../font/Montserrat-Black.ttf);
+}
+
+
 $primary-color: #272727;
 $secondary-color:#63cdf3;
 // $secondary-color:#ff652f;
