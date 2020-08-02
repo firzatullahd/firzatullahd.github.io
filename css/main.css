@@ -405,8 +405,8 @@
 .contact__list {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+  -ms-grid-columns: 2fr;
+      grid-template-columns: 2fr;
   gap: 2rem;
   font-size: 1.5rem;
 }
@@ -430,7 +430,7 @@
     height: 100%;
     background: transparent;
     text-align: left;
-    padding-left: 1rem;
+    padding-left: 4rem;
   }
   .nav .menu-nav__item {
     display: inline;
@@ -448,6 +448,26 @@
   .projects__items {
     -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+  .projects .text-secondary {
+    font-size: 3rem;
+  }
+  .contact__list {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contact__list {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .projects__bio-image {
+    height: 50vh;
   }
 }
 

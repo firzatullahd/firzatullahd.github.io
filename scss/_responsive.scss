@@ -12,7 +12,7 @@
             height: 100%;
             background: transparent;
             text-align: left;
-            padding-left: 1rem;
+            padding-left: 4rem;
 
             &__item {
                 display: inline;
@@ -38,5 +38,25 @@
         &__items {
             grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
         }
+
+        .text-secondary {
+            font-size: 3rem;
+        }
+    }
+
+    .contact__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@include media-lg {
+    .contact__list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@include media-xl {
+    .projects__bio-image {
+        height: 50vh;
     }
 }
