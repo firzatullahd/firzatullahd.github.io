@@ -26,6 +26,10 @@
         }
     }
 
+    .home__name {
+        font-size: 4rem;
+    }
+
     .about__bio {
         font-size: 1.5rem;
     }
@@ -36,7 +40,7 @@
         }
 
         &__items {
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         }
 
         .text-secondary {
@@ -44,8 +48,15 @@
         }
     }
 
-    .contact__list {
-        grid-template-columns: repeat(2, 1fr);
+    .contact {
+        padding-top: 30vh;
+
+        &__list {
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
+            padding-left: 5rem;
+        }
+
     }
 }
 

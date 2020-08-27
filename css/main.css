@@ -1,13 +1,5 @@
-@font-face {
-  font-family: Merriweather;
-  src: url(../font/Merriweather-Regular.ttf);
-}
-
-@font-face {
-  font-family: Montserrat;
-  src: url(../font/Montserrat-Black.ttf);
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,700;0,900;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -68,7 +60,7 @@
 }
 
 .home__name {
-  font-size: 5rem;
+  font-size: 3.7rem;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
   border-bottom: 2px solid #fff;
@@ -142,10 +134,10 @@
 }
 
 .nav {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  width: 100vh;
+  width: 100%;
   opacity: 0.98;
   visibility: hidden;
 }
@@ -192,8 +184,8 @@
 }
 
 .nav .menu-nav__item.open {
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -webkit-transform: translateX(-20%);
+          transform: translateX(-20%);
 }
 
 .nav .menu-nav__item.active > a {
@@ -319,8 +311,8 @@
 }
 
 .projects__bio-image {
-  height: 30vh;
   width: 100%;
+  height: 50vh;
   background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.5)), to(rgba(39, 39, 39, 0.15))), url(../img/background.png) center top;
   background: linear-gradient(to right, rgba(39, 39, 39, 0.5), rgba(39, 39, 39, 0.15)), url(../img/background.png) center top;
   background-size: cover;
@@ -339,9 +331,18 @@
           justify-content: flex-end;
 }
 
-.projects__bio-image .text-secondary {
-  font-size: 2rem;
+.projects__bio-image p {
   margin-bottom: 2rem;
+}
+
+.projects__bio {
+  width: 80%;
+  text-align: center;
+}
+
+.projects__bio .text-secondary {
+  font-size: 2rem;
+  padding-bottom: 1rem;
 }
 
 .projects__items {
@@ -414,6 +415,19 @@
   color: #fff;
 }
 
+.projects__desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 5;
+  padding: 1rem 0;
+  font-weight: 700;
+  font-family: 'Merriweather', serif;
+}
+
 .projects .social-icons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -431,7 +445,7 @@
 
 .contact {
   height: 100%;
-  padding-top: 40vh;
+  padding-top: 15vh;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -461,6 +475,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-left: 1.25rem;
   gap: 1.5rem;
   font-size: 1.5rem;
 }
@@ -493,6 +508,9 @@
   .nav .menu-nav__link {
     font-size: 1.5rem;
   }
+  .home__name {
+    font-size: 4rem;
+  }
   .about__bio {
     font-size: 1.5rem;
   }
@@ -500,15 +518,22 @@
     height: 40vh;
   }
   .projects__items {
-    -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
   .projects .text-secondary {
     font-size: 3rem;
   }
+  .contact {
+    padding-top: 30vh;
+  }
   .contact__list {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 5rem;
   }
 }
 
@@ -529,7 +554,7 @@ body {
   background-color: #272727;
   color: #fff;
   height: 100vh;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   line-height: 1;
 }
 
@@ -557,7 +582,7 @@ header {
 }
 
 main {
-  height: 100%;
+  height: 100vh;
   width: 100%;
 }
 

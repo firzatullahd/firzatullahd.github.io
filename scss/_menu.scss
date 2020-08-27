@@ -54,10 +54,10 @@
 }
 
 .nav {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
-    width: 100vh;
+    width: 100%;
     opacity: 0.98;
     visibility: hidden;
 
@@ -87,7 +87,7 @@
             @include transition-ease;
 
             &.open {
-                transform: translateX(-50%);
+                transform: translateX(-20%);
             }
 
             &.active>a {
