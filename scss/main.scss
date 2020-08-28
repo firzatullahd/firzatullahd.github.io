@@ -46,6 +46,7 @@ main {
         position: fixed;
         bottom: 1rem;
         left: 1rem;
+        display: flex;
 
         a {
             padding: 0.4rem;
@@ -62,7 +63,7 @@ footer {
     font-size: 1rem;
     position: fixed;
     bottom: 0.4rem;
-    right: 1rem;
+    right: 0.4rem;
     text-align: right;
     padding: 1rem;
     color: set-text-color($primary-color);

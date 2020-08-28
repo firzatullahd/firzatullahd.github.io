@@ -271,23 +271,32 @@
   margin: 2rem auto 0 auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
   gap: 2rem;
 }
 
-.about .jobs__job {
+.about .jobs .title {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+.about .jobs__job, .about .jobs__edu, .about .jobs__course {
+  list-style-type: circle;
   background: #414141;
   padding: 0.5rem;
   border-bottom: 5px solid #63cdf3;
+  line-height: 1.3;
 }
 
-.about .jobs__job h2,
-.about .jobs__job h3 {
+.about .jobs__job h2, .about .jobs__edu h2, .about .jobs__course h2,
+.about .jobs__job h3,
+.about .jobs__edu h3,
+.about .jobs__course h3 {
   margin: 0.5 rem 0;
 }
 
-.about .jobs__job h6 {
+.about .jobs__job h6, .about .jobs__edu h6, .about .jobs__course h6 {
   margin: 0.3rem 0;
 }
 
@@ -480,11 +489,6 @@
   font-size: 1.5rem;
 }
 
-.contact .social-icons {
-  position: initial;
-  margin-top: 2rem;
-}
-
 @media screen and (min-width: 768px) {
   .menu-btn {
     visibility: hidden;
@@ -590,6 +594,9 @@ main .social-icons {
   position: fixed;
   bottom: 1rem;
   left: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 main .social-icons a {
@@ -606,7 +613,7 @@ footer {
   font-size: 1rem;
   position: fixed;
   bottom: 0.4rem;
-  right: 1rem;
+  right: 0.4rem;
   text-align: right;
   padding: 1rem;
   color: #fff;
